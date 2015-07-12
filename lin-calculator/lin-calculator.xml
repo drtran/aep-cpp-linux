@@ -1,0 +1,7 @@
+<testsuites>
+	<testsuite name="AllTests" tests="3">
+		<testcase classname="AllTests" name="testInitialValue"/>
+		<testcase classname="AllTests" name="testSpecifiedStartValue"/>
+		<testcase classname="AllTests" name="testAddValue"/>
+	</testsuite>
+</testsuites>
