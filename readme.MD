@@ -51,13 +51,13 @@ gcc -Wl,--add-stdcall-alias -I"%JAVA_HOME%\include" -I"%JAVA_HOME%\include\win32
 
 
 - Linux:
-  - jni project: target/classes:
-    javah -jni com.bemach.examples.jni.SayHelloJni
-    cp com_bemach_examples_jni_SayHelloJni.h ../../../lin-hello/src/.
+  jni project: target/classes:
+    - javah -jni com.bemach.examples.jni.SayHelloJni
+    - cp com_bemach_examples_jni_SayHelloJni.h ../../../lin-hello/src/.
 
-  - lin-hello project: src
-    gcc -fPIC -shared hello.c -I$JAVA_HOME/include -I$JAVA_HOME/include/linux -o libhello.so
+  lin-hello project: src
+    - gcc -fPIC -shared hello.c -I$JAVA_HOME/include -I$JAVA_HOME/include/linux -o libhello.so
 
 website:
-http://adamish.com/blog/archives/620
+  - http://adamish.com/blog/archives/620
 
